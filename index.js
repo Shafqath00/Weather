@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import { render } from "ejs";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT ||3000;
 const API_KEY = "c6364156213459594897e986835c30c0";
 const icon_url="https://openweathermap.org/img/wn/";
 let wind,humidity,name,pressure,main,tem,test,location;
