@@ -18,6 +18,10 @@
 
 <body>
     <div class="body">
+     <div class="loadingScreen">
+            <!--My content is the word "soundscape" but the o is replaced with a disc-->
+            <img src="/img/Spinner.gif" alt="disc" height="auto" />
+        </div>
         <div class="heander-con">
             <div class="container">
                 <div class="header">
@@ -90,6 +94,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        var loadingScreen = document.querySelector(".loadingScreen");
+        window.addEventListener('load', function () {
+            loadingScreen.style.display = 'none';
+        })
+    </script>
 </body>
 
 </html>
